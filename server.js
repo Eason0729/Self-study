@@ -197,6 +197,7 @@ io.on("connection", (socket) => {
       );
     }
     //infer the client
+    console.log("!")
     io.to(socket.id).emit("statusb", { right: -1 });
   });
 
