@@ -84,6 +84,7 @@ class HC {
         HC.socket.on("statusb", function (e) {
           if (e.right == -1) resolve();
           else reject();
+          HC.socket.disconnect()
         });
       });
     },
